@@ -7,9 +7,8 @@ services:
       context: ./src
     ports:
       - "5000:5000"
-      - "20128:20128"
     environment:
-      PORT: "20128"
+      PORT: "5000"
       HOSTNAME: "0.0.0.0"
       HOST: "0.0.0.0"
-      NEXT_PUBLIC_BASE_URL: "http://localhost:20128"
+      NEXT_PUBLIC_BASE_URL: "http://localhost:5000"

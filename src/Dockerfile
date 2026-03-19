@@ -9,5 +9,5 @@ ENV NEXT_PUBLIC_BASE_URL=http://localhost:5000
 
 EXPOSE 5000
 
-# Pipe a newline to auto-select "Web UI" so it doesn't block on the interactive menu
-ENTRYPOINT ["sh", "-c", "echo '' | 9router --port 5000 --no-browser --skip-update"]
+# Run the underlying server directly to bypass the interactive CLI wrapper
+ENTRYPOINT ["node", "/usr/local/lib/node_modules/9router/app/server.js"]

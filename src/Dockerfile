@@ -1,12 +1,10 @@
 FROM node:20-alpine
 
-WORKDIR /app/src
-COPY . /app/src
+RUN npm install -g 9router
 
-RUN npm install
+ENV PORT=20128
+ENV NEXT_PUBLIC_BASE_URL=http://localhost:20128
 
-RUN chown -R node:node /app
+EXPOSE 20128
 
-USER node
-
-ENTRYPOINT /app/src/entrypoint.sh
+ENTRYPOINT ["9router"]

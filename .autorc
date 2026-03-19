@@ -1,0 +1,12 @@
+{
+  "plugins": [
+    "git-tag",
+    "all-contributors",
+    "first-time-contributor",
+    "released"
+  ],
+  "owner": "A7med-Hosam",
+  "repo": "container-hzv-qb4",
+  "name": "A7med-Hosam",
+  "email": "kingahmedhosam@gmail.com",
+}

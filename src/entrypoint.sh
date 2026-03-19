@@ -1,8 +1,8 @@
 #!/bin/sh
 
-# Start 9router in the background
+# Start 9router in the background (bind to all interfaces)
 echo "Starting 9router in the background..."
-9router &
+HOSTNAME=0.0.0.0 HOST=0.0.0.0 9router &
 
 # Start the Node.js application in the foreground
 echo "Starting Node.js application..."

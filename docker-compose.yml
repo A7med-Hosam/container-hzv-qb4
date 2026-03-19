@@ -10,4 +10,6 @@ services:
       - "20128:20128"
     environment:
       PORT: "20128"
+      HOSTNAME: "0.0.0.0"
+      HOST: "0.0.0.0"
       NEXT_PUBLIC_BASE_URL: "http://localhost:20128"
